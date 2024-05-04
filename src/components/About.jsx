@@ -6,29 +6,35 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import StarWrapper from "../hoc/SectionWrapper";
 import { fadeIn, textVariant } from "../utils/motion";
+import { FaReact } from "react-icons/fa";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <motion.div
-    variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-    className=" green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-  >
-    <div
-      options={{
-        max: 45,
-        scale: 1,
-        speed: 450,
-      }}
-      className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+  <Tilt>
+    <motion.div
+      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      className=" green-pink-gradient p-[1px] rounded-[20px] shadow-card"
     >
-      <img
-        src={icon}
-        alt="web-development"
-        className="w-16 h-16 object-contain"
-      />
+      <div
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+      >
+        <img
+          src="https://cdn.sanity.io/images/dn908w7j/production/45c7b8345cbf35abd1e4216bda5c0e9e6bee66f4-500x500.png"
+          alt="web-development"
+          className="w-16 h-16 object-contain"
+        />
+   
 
-      <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
-    </div>
-  </motion.div>
+        <h3 className="text-white text-[20px] font-bold text-center">
+          {title}
+        </h3>
+      </div>
+    </motion.div>
+  </Tilt>
 );
 
 const About = () => {
@@ -41,7 +47,6 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        // className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         className="mt-4 text-secondary text-[18px] leading-8"
       >
         I am an enthusiastic and motivated software developer with a passion for
