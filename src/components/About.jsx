@@ -1,5 +1,5 @@
 import React from "react";
-// import Tilt from "react-tilt";
+import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -8,31 +8,27 @@ import StarWrapper from "../hoc/SectionWrapper";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className=' green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+  <motion.div
+    variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+    className=" green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+  >
+    <div
+      options={{
+        max: 45,
+        scale: 1,
+        speed: 450,
+      }}
+      className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
     >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
+      <img
+        src={icon}
+        alt="web-development"
+        className="w-16 h-16 object-contain"
+      />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-
+      <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+    </div>
+  </motion.div>
 );
 
 const About = () => {
@@ -45,16 +41,17 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        // className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[18px] leading-8"
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I am an enthusiastic and motivated software developer with a passion for
+        learning and growth in the field. I stay updated with the latest trends
+        and technologies, constantly seeking to leverage new tools and
+        methodologies to enhance my skills. My expertise lies in React.js, and I
+        find immense joy in what I do.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
