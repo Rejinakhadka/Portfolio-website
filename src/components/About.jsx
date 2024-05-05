@@ -55,6 +55,7 @@ const About = () => {
         methodologies to enhance my skills. My expertise lies in React.js, and I
         find immense joy in what I do.
       </motion.p>
+   
 
       <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {services.map((service, index) => (

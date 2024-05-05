@@ -178,7 +178,7 @@ const projects = [
     source_code_link: "https://github.com/Rejinakhadka/movixreactwebapp",
   },
   {
-    name: "Job IT",
+    name: "Crud ",
     description: "A simple Form Management System.",
     tags: [
       {
