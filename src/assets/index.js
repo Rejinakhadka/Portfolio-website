@@ -29,6 +29,7 @@ import tesla from "./company/tesla.png";
 import movix from "./movix.png"
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import resume from "./resume.png";
 
 export {
   logo,
@@ -59,4 +60,5 @@ export {
   movix,
   jobit,
   tripguide,
+  resume
 };

@@ -16,6 +16,7 @@ import {
  
   threejs,
   movix,
+  resume,
  
 } from "../assets";
 
@@ -131,6 +132,24 @@ const projects = [
     ],
     image: movix,
     source_code_link: "https://github.com/Rejinakhadka/movixreactwebapp",
+  },
+  {
+    name: "Resume_Builder",
+    description:
+      "ResumeBuilder is a user-friendly web app for creating resumes with real-time previews and easy printing/downloading.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+    
+      {
+        name: "Material UI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: resume,
+    source_code_link: "https://buildportfolio.netlify.app",
   },
   {
     name: "Crud ",
