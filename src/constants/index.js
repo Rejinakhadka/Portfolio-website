@@ -147,6 +147,12 @@ const projects = [
         name: "Material UI",
         color: "pink-text-gradient",
       },
+      
+      {
+        name: "React Hook Form",
+        color: "pink-text-gradient",
+      },
+      
     ],
     image: resume,
     source_code_link: "https://buildportfolio.netlify.app",
@@ -164,12 +170,17 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind css",
+        name: "axios",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "css",
         color: "pink-text-gradient",
       },
+
     ],
     image: jobit,
-    source_code_link: "https://github.com/Rejinakhadka/crud_reactjs",
+    source_code_link: "https://profiledata11.netlify.app/",
   },
   {
     name: "News Bite ",
