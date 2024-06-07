@@ -47,12 +47,14 @@ const Contact = () => {
           from_email: form.email,
           to_email: "rejinakhadka00@gmail.com",
           message: form.message,
+          reply_to: form.email, // Add the reply_to field
         },
         "6_Xjda3crMOBDQXhN"
       )
       .then(
-        () => {
+        (response) => {
           setLoading(false);
+          console.log('Email successfully sent!', response.status, response.text);
           alert("Thank you. I will get back to you as soon as possible.");
 
           setForm({
@@ -63,13 +65,15 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false);
-          console.error(error);
+          console.error('Failed to send email:', error);
 
           alert("Ahh, something went wrong. Please try again.");
         }
       );
   };
+
   const isSubmitDisabled = !form.name || !form.email || !form.message;
+
   return (
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
