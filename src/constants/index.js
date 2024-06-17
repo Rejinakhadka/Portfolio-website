@@ -86,7 +86,20 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer (Internship)",
+    title: "Junior React Developer",
+    company_name: "Autolab Technologies",
+    icon: "",
+    iconBg: "#E6DEDD",
+    date: "June 2024 - present",
+    points: [
+      "Working on Japan Based project called Misumi.",
+      "Currently Doing Unit Testing using jest",
+      "Utilized Next js as a framework .",
+   
+    ],
+  },
+  {
+    title: "React.js Developer (Traineeship)",
     company_name: "Treeleaf.ai",
     icon: "https://cdn.sanity.io/images/dn908w7j/production/910196a3e37ad448c9da73091041fffa49e4c44b-225x225.png",
     iconBg: "#383E56",
@@ -108,6 +121,7 @@ const experiences = [
       "Utilized Tailwind css for styling.",
     ],
   },
+
 ];
 
 
@@ -131,7 +145,7 @@ const projects = [
       },
     ],
     image: movix,
-    source_code_link: "https://github.com/Rejinakhadka/movixreactwebapp",
+    source_code_link: "https://browsemovixtrailer.netlify.app/",
   },
   {
     name: "Resume_Builder",
