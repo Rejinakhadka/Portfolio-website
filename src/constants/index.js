@@ -110,17 +110,17 @@ const experiences = [
       "Utilzed ReactQuery , Redux Toolkit ,Ant Design, react grid layout , react monaco editor , recharts",
     ],
   },
-  {
-    title: "Front-end Developer - Project Based Internship",
-    company_name: "Spell Innovation",
-    icon: "https://spellinnovation.com/uploads/22-10-16-12-02-34Frame%203.png",
-    iconBg: "#E6DEDD",
-    date: "July 2023 - October 2023",
-    points: [
-      "Developing UI of A Trek and Travel Website.",
-      "Utilized Tailwind css for styling.",
-    ],
-  },
+  // {
+  //   title: "Front-end Developer - Project Based Internship",
+  //   company_name: "Spell Innovation",
+  //   icon: "https://spellinnovation.com/uploads/22-10-16-12-02-34Frame%203.png",
+  //   iconBg: "#E6DEDD",
+  //   date: "July 2023 - October 2023",
+  //   points: [
+  //     "Developing UI of A Trek and Travel Website.",
+  //     "Utilized Tailwind css for styling.",
+  //   ],
+  // },
 
 ];
 
