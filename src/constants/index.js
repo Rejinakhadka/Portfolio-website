@@ -86,41 +86,40 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Junior React Developer",
+    title: " React/Next js Developer",
     company_name: "Autolab Technologies",
     icon: "",
     iconBg: "#E6DEDD",
-    date: "June 2024 - present",
+    date: "May 2024 - present",
     points: [
-      "Working on Japan Based project called Misumi.",
-      "Currently Doing Unit Testing using jest",
+      "Working on Misumi's Project which is parts comparator project",
       "Utilized Next js as a framework .",
    
     ],
   },
   {
-    title: "React.js Developer (Traineeship)",
+    title: "React.js Developer ",
     company_name: "Treeleaf.ai",
     icon: "https://cdn.sanity.io/images/dn908w7j/production/910196a3e37ad448c9da73091041fffa49e4c44b-225x225.png",
     iconBg: "#383E56",
-    date: "Jan 2024 - April 2024",
+    date: "November 2023 - May 2024",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       " Led UI design and API integration for Treelytics project.",
       "Utilzed ReactQuery , Redux Toolkit ,Ant Design, react grid layout , react monaco editor , recharts",
     ],
   },
-  // {
-  //   title: "Front-end Developer - Project Based Internship",
-  //   company_name: "Spell Innovation",
-  //   icon: "https://spellinnovation.com/uploads/22-10-16-12-02-34Frame%203.png",
-  //   iconBg: "#E6DEDD",
-  //   date: "July 2023 - October 2023",
-  //   points: [
-  //     "Developing UI of A Trek and Travel Website.",
-  //     "Utilized Tailwind css for styling.",
-  //   ],
-  // },
+  {
+    title: "Front-end Developer - Internship",
+    company_name: "Spell Innovation",
+    icon: "https://spellinnovation.com/uploads/22-10-16-12-02-34Frame%203.png",
+    iconBg: "#E6DEDD",
+    date: "July 2023 - October 2023",
+    points: [
+      "Developing UI of A Trek and Travel Website.",
+      "Utilized Tailwind css for styling.",
+    ],
+  },
 
 ];
 
